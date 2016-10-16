@@ -1,14 +1,14 @@
 /*
  * @Author: toan.nguyen
  * @Date:   2016-05-06 01:31:10
- * @Last Modified by:   toan.nguyen
- * @Last Modified time: 2016-10-09 14:57:50
+* @Last modified by:   nhutdev
+* @Last modified time: 2016-10-16T20:19:22+07:00
  */
 
 'use strict';
 
 const Hoek = require('hoek');
-const helpers = require('nexx-helpers');
+const helpers = require('node-helpers');
 const imageHelper = helpers.Image;
 
 
@@ -63,7 +63,7 @@ class ProfileController {
 
       let settings = {};
       if (profile.settings) {
-        if (typeof (profile.settings) === 'string') {
+        if (typeof(profile.settings) === 'string') {
           profile.settings = JSON.parse(profile.settings);
 
         }
@@ -270,7 +270,7 @@ class ProfileController {
       settings = {};
 
     if (profile.settings) {
-      if (typeof (profile.settings) === 'string') {
+      if (typeof(profile.settings) === 'string') {
         profile.settings = JSON.parse(profile.settings);
       }
     } else {
@@ -405,7 +405,7 @@ class ProfileController {
 
       let settings = {};
       if (profile.settings) {
-        if (typeof (profile.settings) === 'string') {
+        if (typeof(profile.settings) === 'string') {
           profile.settings = JSON.parse(profile.settings);
 
         }

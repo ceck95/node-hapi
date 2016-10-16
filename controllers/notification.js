@@ -1,14 +1,14 @@
 /*
  * @Author: Chien Pham
  * @Date:   2016-06-28 16:59:55
- * @Last Modified by:   toan.nguyen
- * @Last Modified time: 2016-10-10 17:05:16
+* @Last modified by:   nhutdev
+* @Last modified time: 2016-10-16T20:19:18+07:00
  */
 
 'use strict';
 
 const config = require('config');
-const helpers = require('nexx-helpers');
+const helpers = require('node-helpers');
 
 const PaginationModel = helpers.models.Pagination;
 const NotificationFilter = helpers.forms.NotificationFilter;
@@ -58,10 +58,10 @@ class NotificationController {
         });
 
         switch (element.type) {
-        case 'news_raw':
-          model.message = null;
-          break;
-        default:
+          case 'news_raw':
+            model.message = null;
+            break;
+          default:
         }
         models.push(model);
       });
