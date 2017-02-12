@@ -1,8 +1,8 @@
 /*
  * @Author: toan.nguyen
  * @Date:   2016-10-25 16:16:51
- * @Last Modified by:   toan.nguyen
- * @Last Modified time: 2017-01-02 10:21:56
+* @Last modified by:   nhutdev
+* @Last modified time: 2017-02-12T09:32:52+07:00
  */
 
 'use strict';
@@ -10,7 +10,7 @@
 const Joi = require('joi');
 const Hoek = require('hoek');
 const config = require('config');
-const helpers = require('nexx-helpers');
+const helpers = require('node-helpers');
 
 const Route = require('../lib/route');
 
