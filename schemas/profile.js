@@ -1,14 +1,14 @@
 /*
  * @Author: toan.nguyen
  * @Date:   2016-11-02 14:31:26
- * @Last Modified by:   toan.nguyen
- * @Last Modified time: 2016-11-02 14:33:37
+* @Last modified by:   nhutdev
+* @Last modified time: 2017-02-12T09:38:06+07:00
  */
 
 'use strict';
 
 const Joi = require('joi');
-const helpers = require('nexx-helpers');
+const helpers = require('node-helpers');
 
 let profileRequest = Joi.object({
   displayName: Joi.any(),
@@ -18,8 +18,7 @@ let profileRequest = Joi.object({
   phoneNumber: Joi.any(),
   gender: Joi.any(),
   dateOfBirth: Joi.any(),
-  isVerified: Joi.boolean().default(false),
-  address: helpers.schemas.address.request
+  isVerified: Joi.boolean().default(false)
 });
 
 module.exports = {
