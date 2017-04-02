@@ -16,7 +16,7 @@ module.exports = {
     Notification: require('./controllers/notification'),
     Profile: require('./controllers/profile')
   },
-  Controler: require('./lib/controller'),
+  Controller: require('./lib/controller'),
   Route: require('./lib/route'),
   routes: {
     Profile: require('./routes/profile')
